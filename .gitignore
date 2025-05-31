@@ -1,0 +1,14 @@
+# Archivos de visual Studio
+.vs/
+*.suo
+*.user
+*.usersscache
+*.sln.docstates
+
+# Carpetas de compilación
+bin/
+obj/
+
+# Archivos temporales
+*.tmp
+*~
