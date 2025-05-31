@@ -32,7 +32,7 @@
             cmbEmergencias = new ComboBox();
             lvPautas = new ListView();
             label3 = new Label();
-            button1 = new Button();
+            btnAgregar = new Button();
             SuspendLayout();
             // 
             // label1
@@ -78,21 +78,22 @@
             label3.Text = "PAUTAS BÁSICAS";
             label3.Click += label3_Click;
             // 
-            // button1
+            // btnAgregar
             // 
-            button1.Location = new Point(294, 432);
-            button1.Name = "button1";
-            button1.Size = new Size(130, 23);
-            button1.TabIndex = 6;
-            button1.Text = "Agregar nueva guía";
-            button1.UseVisualStyleBackColor = true;
+            btnAgregar.Location = new Point(294, 432);
+            btnAgregar.Name = "btnAgregar";
+            btnAgregar.Size = new Size(130, 23);
+            btnAgregar.TabIndex = 6;
+            btnAgregar.Text = "Agregar nueva guía";
+            btnAgregar.UseVisualStyleBackColor = true;
+            btnAgregar.Click += button1_Click;
             // 
             // PrimerosAuxilios
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(445, 492);
-            Controls.Add(button1);
+            Controls.Add(btnAgregar);
             Controls.Add(label3);
             Controls.Add(lvPautas);
             Controls.Add(cmbEmergencias);
@@ -109,6 +110,6 @@
         private ComboBox cmbEmergencias;
         private ListView lvPautas;
         private Label label3;
-        private Button button1;
+        private Button btnAgregar;
     }
 }

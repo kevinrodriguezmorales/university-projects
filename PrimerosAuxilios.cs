@@ -6,7 +6,7 @@ namespace PrimerosAuxilios
         public PrimerosAuxilios()
         {
             InitializeComponent();
-            gestor = new GestorDeDatos();
+            gestor = GestorDeDatos.Instance;
             CargarEmergencias();
         }
 
@@ -24,7 +24,7 @@ namespace PrimerosAuxilios
         {
             cmbEmergencias.Items.Clear();
 
-            gestor.ObtenerTodasLasEmergencias().Recorrer(emergencia =>
+            GestorDeDatos.Instance.ObtenerTodasLasEmergencias().Recorrer(emergencia =>
             {
                 cmbEmergencias.Items.Add(emergencia.Titulo);
             });
@@ -70,6 +70,21 @@ namespace PrimerosAuxilios
         private void lvPautas_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // NuevaEmergencia formNuevaEmergencia = new NuevaEmergencia();
+            // formNuevaEmergencia.Show();
+
+            using (var formNuevaEmergencia = new NuevaEmergencia())
+            {
+                if (formNuevaEmergencia.ShowDialog() == DialogResult.OK)
+                {
+                    // Aquí sí puedes actualizar el ComboBox
+                    CargarEmergencias();
+                }
+            }
         }
     }
 }

@@ -8,6 +8,7 @@ namespace PrimerosAuxilios
 {
     internal class GestorDeDatos
     {
+        private static GestorDeDatos _instance;
         private ListaEnlazada<Emergencia> _listaEmergencias;
 
         public GestorDeDatos()
@@ -16,7 +17,19 @@ namespace PrimerosAuxilios
             InicializarDatos();
         }
 
-        // Datos iniciales (opcional)
+        public static GestorDeDatos Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new GestorDeDatos();
+                }
+                return _instance;
+            }
+        }
+
+        // Datos iniciales
         private void InicializarDatos()
         {
             var ingestion = new Emergencia("Ingestión de productos químicos");
@@ -57,7 +70,7 @@ namespace PrimerosAuxilios
         public List<Emergencia> BuscarPorTitulo(string titulo)
         {
             return _listaEmergencias.BuscarTodos(e =>
-                e.Titulo.IndexOf(titulo, StringComparison.OrdinalIgnoreCase) >= 0);
+                e.Titulo.Equals(titulo, StringComparison.OrdinalIgnoreCase));
         }
     }
 }

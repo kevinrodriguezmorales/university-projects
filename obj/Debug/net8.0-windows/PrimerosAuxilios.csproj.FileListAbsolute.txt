@@ -4,7 +4,6 @@ D:\Documentos\learning\UPN\Courses\Estructura-de-datos-2329\primeros-auxilios\Pr
 D:\Documentos\learning\UPN\Courses\Estructura-de-datos-2329\primeros-auxilios\PrimerosAuxilios\obj\Debug\net8.0-windows\PrimerosAuxilios.AssemblyInfoInputs.cache
 D:\Documentos\learning\UPN\Courses\Estructura-de-datos-2329\primeros-auxilios\PrimerosAuxilios\obj\Debug\net8.0-windows\PrimerosAuxilios.AssemblyInfo.cs
 D:\Documentos\learning\UPN\Courses\Estructura-de-datos-2329\primeros-auxilios\PrimerosAuxilios\obj\Debug\net8.0-windows\PrimerosAuxilios.csproj.CoreCompileInputs.cache
-D:\Documentos\learning\UPN\Courses\Estructura-de-datos-2329\primeros-auxilios\PrimerosAuxilios\obj\Debug\net8.0-windows\PrimerosAuxilios.Form1.resources
 D:\Documentos\learning\UPN\Courses\Estructura-de-datos-2329\primeros-auxilios\PrimerosAuxilios\bin\Debug\net8.0-windows\PrimerosAuxilios.exe
 D:\Documentos\learning\UPN\Courses\Estructura-de-datos-2329\primeros-auxilios\PrimerosAuxilios\bin\Debug\net8.0-windows\PrimerosAuxilios.deps.json
 D:\Documentos\learning\UPN\Courses\Estructura-de-datos-2329\primeros-auxilios\PrimerosAuxilios\bin\Debug\net8.0-windows\PrimerosAuxilios.runtimeconfig.json
@@ -15,3 +14,5 @@ D:\Documentos\learning\UPN\Courses\Estructura-de-datos-2329\primeros-auxilios\Pr
 D:\Documentos\learning\UPN\Courses\Estructura-de-datos-2329\primeros-auxilios\PrimerosAuxilios\obj\Debug\net8.0-windows\PrimerosAuxilios.pdb
 D:\Documentos\learning\UPN\Courses\Estructura-de-datos-2329\primeros-auxilios\PrimerosAuxilios\obj\Debug\net8.0-windows\PrimerosAuxilios.genruntimeconfig.cache
 D:\Documentos\learning\UPN\Courses\Estructura-de-datos-2329\primeros-auxilios\PrimerosAuxilios\obj\Debug\net8.0-windows\ref\PrimerosAuxilios.dll
+D:\Documentos\learning\UPN\Courses\Estructura-de-datos-2329\primeros-auxilios\PrimerosAuxilios\obj\Debug\net8.0-windows\PrimerosAuxilios.NuevaEmergencia.resources
+D:\Documentos\learning\UPN\Courses\Estructura-de-datos-2329\primeros-auxilios\PrimerosAuxilios\obj\Debug\net8.0-windows\PrimerosAuxilios.sourcelink.json

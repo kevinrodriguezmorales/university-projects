@@ -1,6 +1,6 @@
 ﻿namespace PrimerosAuxilios
 {
-    partial class Form1
+    partial class NuevaEmergencia
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            textBox1 = new TextBox();
+            txtEmergencia = new TextBox();
             label2 = new Label();
-            textBox2 = new TextBox();
-            button1 = new Button();
+            txtPauta = new TextBox();
+            btnAnadirPauta = new Button();
             label3 = new Label();
-            listView1 = new ListView();
-            button2 = new Button();
+            lvVistaPrevia = new ListView();
+            btnRegistrar = new Button();
             SuspendLayout();
             // 
             // label1
@@ -47,12 +47,12 @@
             label1.TabIndex = 0;
             label1.Text = "Emergencia";
             // 
-            // textBox1
+            // txtEmergencia
             // 
-            textBox1.Location = new Point(30, 44);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(302, 23);
-            textBox1.TabIndex = 1;
+            txtEmergencia.Location = new Point(30, 44);
+            txtEmergencia.Name = "txtEmergencia";
+            txtEmergencia.Size = new Size(302, 23);
+            txtEmergencia.TabIndex = 1;
             // 
             // label2
             // 
@@ -63,21 +63,22 @@
             label2.TabIndex = 2;
             label2.Text = "Pauta";
             // 
-            // textBox2
+            // txtPauta
             // 
-            textBox2.Location = new Point(30, 98);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(302, 23);
-            textBox2.TabIndex = 3;
+            txtPauta.Location = new Point(30, 98);
+            txtPauta.Name = "txtPauta";
+            txtPauta.Size = new Size(302, 23);
+            txtPauta.TabIndex = 3;
             // 
-            // button1
+            // btnAnadirPauta
             // 
-            button1.Location = new Point(211, 140);
-            button1.Name = "button1";
-            button1.Size = new Size(121, 23);
-            button1.TabIndex = 4;
-            button1.Text = "Añadir pauta";
-            button1.UseVisualStyleBackColor = true;
+            btnAnadirPauta.Location = new Point(211, 140);
+            btnAnadirPauta.Name = "btnAnadirPauta";
+            btnAnadirPauta.Size = new Size(121, 23);
+            btnAnadirPauta.TabIndex = 4;
+            btnAnadirPauta.Text = "Añadir pauta";
+            btnAnadirPauta.UseVisualStyleBackColor = true;
+            btnAnadirPauta.Click += btnAnadirPauta_Click;
             // 
             // label3
             // 
@@ -88,38 +89,41 @@
             label3.TabIndex = 5;
             label3.Text = "Vista previa";
             // 
-            // listView1
+            // lvVistaPrevia
             // 
-            listView1.Location = new Point(30, 204);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(302, 156);
-            listView1.TabIndex = 6;
-            listView1.UseCompatibleStateImageBehavior = false;
+            lvVistaPrevia.GridLines = true;
+            lvVistaPrevia.Location = new Point(30, 204);
+            lvVistaPrevia.Name = "lvVistaPrevia";
+            lvVistaPrevia.Size = new Size(302, 156);
+            lvVistaPrevia.TabIndex = 6;
+            lvVistaPrevia.UseCompatibleStateImageBehavior = false;
+            lvVistaPrevia.View = View.Details;
             // 
-            // button2
+            // btnRegistrar
             // 
-            button2.Location = new Point(211, 381);
-            button2.Name = "button2";
-            button2.Size = new Size(121, 23);
-            button2.TabIndex = 7;
-            button2.Text = "Registrar";
-            button2.UseVisualStyleBackColor = true;
+            btnRegistrar.Location = new Point(211, 381);
+            btnRegistrar.Name = "btnRegistrar";
+            btnRegistrar.Size = new Size(121, 23);
+            btnRegistrar.TabIndex = 7;
+            btnRegistrar.Text = "Registrar";
+            btnRegistrar.UseVisualStyleBackColor = true;
+            btnRegistrar.Click += btnRegistrar_Click;
             // 
-            // Form1
+            // NuevaEmergencia
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(373, 450);
-            Controls.Add(button2);
-            Controls.Add(listView1);
+            Controls.Add(btnRegistrar);
+            Controls.Add(lvVistaPrevia);
             Controls.Add(label3);
-            Controls.Add(button1);
-            Controls.Add(textBox2);
+            Controls.Add(btnAnadirPauta);
+            Controls.Add(txtPauta);
             Controls.Add(label2);
-            Controls.Add(textBox1);
+            Controls.Add(txtEmergencia);
             Controls.Add(label1);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "NuevaEmergencia";
+            Text = "Nueva Emergencia";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -127,12 +131,12 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
+        private TextBox txtEmergencia;
         private Label label2;
-        private TextBox textBox2;
-        private Button button1;
+        private TextBox txtPauta;
+        private Button btnAnadirPauta;
         private Label label3;
-        private ListView listView1;
-        private Button button2;
+        private ListView lvVistaPrevia;
+        private Button btnRegistrar;
     }
 }

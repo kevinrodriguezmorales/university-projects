@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PrimerosAuxilios")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7b8ad17eb9dd32665ba2beaf30e544b8b4d040f")]
 [assembly: System.Reflection.AssemblyProductAttribute("PrimerosAuxilios")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PrimerosAuxilios")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
